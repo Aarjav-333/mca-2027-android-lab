@@ -1,0 +1,11 @@
+# Android Studio local files (if you later turn a sample into a full Gradle project)
+.gradle/
+.idea/
+build/
+**/build/
+local.properties
+*.iml
+.DS_Store
+Thumbs.db
+*.apk
+*.aab

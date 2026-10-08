@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <GridLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:columnCount="2" android:padding="20dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_columnSpan="2" android:text="ROOM CONTROL PANEL"
+            android:textSize="22sp" android:padding="10dp"/>
+        <Switch android:id="@+id/light1" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="Room Light" android:padding="10dp"/>
+        <Switch android:id="@+id/light2" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="Bed Light" android:padding="10dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_columnSpan="2" android:text="AC Control"
+            android:textSize="18sp" android:padding="10dp"/>
+        <RadioGroup android:id="@+id/acGroup" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_columnSpan="2"
+            android:orientation="horizontal">
+            <RadioButton android:id="@+id/acOff" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="OFF"/>
+            <RadioButton android:id="@+id/acCool" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="COOL"/>
+            <RadioButton android:id="@+id/acHeat" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="HEAT"/>
+        </RadioGroup>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_columnSpan="2" android:text="Amenities"
+            android:textSize="18sp" android:padding="10dp"/>
+        <CheckBox android:id="@+id/spa" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="Spa"/>
+        <CheckBox android:id="@+id/laundry" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="Laundry"/>
+        <CheckBox android:id="@+id/food" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="Food Service"/>
+        <CheckBox android:id="@+id/cleaning" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="Cleaning"/>
+        <Button android:id="@+id/submit" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_columnSpan="2"
+            android:text="SAVE AND CONTINUE"/>
+    </GridLayout>
+</ScrollView>

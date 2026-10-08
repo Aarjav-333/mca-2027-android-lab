@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+ android:orientation="vertical" android:padding="20dp">
+<EditText android:id="@+id/name" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Student Name" />
+<EditText android:id="@+id/internal" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Internal Marks (0-50)" android:inputType="number" />
+<EditText android:id="@+id/external" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="External Marks (0-100)" android:inputType="number" />
+<Button android:id="@+id/save" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Save Student" />
+<Button android:id="@+id/view" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="View Marks" />
+</LinearLayout></ScrollView>
